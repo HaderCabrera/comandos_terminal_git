@@ -4,7 +4,7 @@ marp: false
 
 # MODULO 3
 ## Git
-![Rta de trabajo](/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
+![Rta de trabajo](/modulo3/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
 
 Creamos carpeta de trabajo
 ```
@@ -75,3 +75,49 @@ user@root:~/intro-git$ git checkout 104715b
 user@root:~/intro-git$ git checkout master
 ```
 
+## CLASE 2 GIT (CREAR BRANCH Y REPOSITORIO GITHUB)
+
+```
+```
+Consultar las ramas actuales
+```
+user@root:~/intro-git$ git branch
+```
+Crear rama nueva
+```
+user@root:~/intro-git$ git branch ramaEjemplo
+```
+Cambiar nombre a la rama
+```
+user@root:~/intro-git$ git branch -m main
+
+```
+Moverme a otra rama
+```
+user@root:~/intro-git$ git checkout ramaEjemplo
+```
+Combinar ramas, debo estar parado en la rama mas vieja y cargar la rama mas nueva
+```
+user@root:~/intro-git$ git merge otraRama
+```
+Borrar ramas
+```
+user@root:~/intro-git$ git branch -D ramaEjemplo
+
+```
+Arrastrar camvios desde cualquier rama a la principal, debo hacer el merge desde el master a la rama ultima.
+
+```
+user@root:~/intro-git$ git merge diseno-front
+```
+
+- Crear un repositorio nuevo
+    - origin: Nombre del repositorio local
+    - la URL es la que viene de la creacion del repositorio
+```
+user@root:~/intro-git$ git remote add origin https://github.com/HaderCabrera/repositorio-pruebaa.git
+```
+Relacionar los push que voy a hacer destino(github- origin) lo que voy a agregar (main). 
+```
+user@root:~/intro-git$ git push -u origin main
+```
