@@ -3,8 +3,8 @@ marp: false
 ---
 
 # MODULO 3
-## Git
-![Rta de trabajo](/modulo3/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
+## Git (MOVERME EN EL AREA LOCAL)
+![Rta de trabajo](/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
 
 Creamos carpeta de trabajo
 ```
@@ -47,16 +47,16 @@ user@root:~/intro-git$ gid add .
 ```
 Copnsultar status del git
 ```
-user@root:~/intro-git$ git status
+ git status
 ```
 Crear un git ignore
 ```
-user@root:~/intro-git$ nano .gitignore
+  nano .gitignore
 ```
 - ELIMIMNAR ARCHIVOS EN AREA INDEX
 
 ```
-user@root:~/intro-git$ git rm --cached index.html main.js styles.css
+git rm --cached index.html main.js styles.css
 ```
 Realizar commit
 ```
@@ -105,7 +105,7 @@ Borrar ramas
 user@root:~/intro-git$ git branch -D ramaEjemplo
 
 ```
-Arrastrar camvios desde cualquier rama a la principal, debo hacer el merge desde el master a la rama ultima.
+Arrastrar cambios desde cualquier rama a la principal, debo hacer el merge desde el master a la rama ultima.
 
 ```
 user@root:~/intro-git$ git merge diseno-front
@@ -121,3 +121,33 @@ Relacionar los push que voy a hacer destino(github- origin) lo que voy a agregar
 ```
 user@root:~/intro-git$ git push -u origin main
 ```
+## CLASE 3 GIT ()
+```
+```
+Verificar si estamos conectados a un repositorio remoto
+```
+git remote
+remote -v
+```
+Desconectarme de repositorio demoto
+```
+git remote rm origin
+```
+Clonar repositorio en la carpeta donde estoy parado
+```
+git clone https://github.com/HaderCabrera/repositorio-pruebaa.git
+```
+Ver primeras lineas y ultimas lineas
+```
+head -5 README.md
+tail -5 README.md 
+```
+Borrar algo que edite sin haber echo el commit o add
+```
+git restore README.md
+```
+
+
+
+
+
