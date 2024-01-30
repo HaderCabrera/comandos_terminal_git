@@ -50,7 +50,7 @@ Consultar status del git
 ```
 git status
 ```
-Crear un git ignore (Archivos que quiero omitir al cargar cambios)
+Crear un git ignore (Archivos que quiero omitir al cargar cambios).
 ```
 nano .gitignore
 ```
