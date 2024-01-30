@@ -4,7 +4,7 @@ marp: false
 
 # MODULO 3
 ## Git (MOVERME EN EL AREA LOCAL)
-![Rta de trabajo](/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
+![Rta de trabajo](/modulo3/imagenes/Captura%20desde%202024-01-25%2019-08-12.png)
 
 - Creamos carpeta de trabajo
 ```
@@ -34,12 +34,17 @@ user@root:~/intro-git$ git init
 user@root:~/intro-git$ nano README.md
 user@root:~/intro-git$ code .
 ```
-- Pasar a **STAGING AREA** (Ver primera imagen)
+- Pasar a **STAGING AREA** (**WORKING DIR** -> **STAGING AREA**)
 - Agregar todos los archivos
 
 ```
 user@root:~/intro-git$ git add README.md
 user@root:~/intro-git$ gid add .
+```
+- Eliminar archivos despues de un **add** (**STAGING AREA** - **WORKING DIR**)
+
+```
+git rm --cached index.html main.js styles.css
 ```
 Consultar status del git
 ```
@@ -49,14 +54,9 @@ Crear un git ignore (Archivos que quiero omitir al cargar cambios)
 ```
 nano .gitignore
 ```
-- Eliminar archivos despues de un **add** (STAGING AREA - WORKING DIR)
-
-```
-git rm --cached index.html main.js styles.css
-```
 - Realizar commit
 ```
-user@root:~/libro$ git commit -m "Añadido indice del libro"
+git commit -m "Añadido indice del libro"
 ```
 - Historico de commits
 ```
@@ -108,19 +108,18 @@ git merge diseno-front
 ```
 git remote add origin https://github.com/HaderCabrera/repositorio-pruebaa.git
 ```
-Relacionar los push que voy a hacer destino(github- origin) lo que voy a agregar (main). 
+- Relacionar los push que voy a hacer destino(github- origin) lo que voy a agregar (main). 
 ```
 git push -u origin main
 ```
 ## CLASE 3 GIT (TRABAJANDO CON GITHUB)
-```
-```
+
 Verificar si estamos conectados a un repositorio remoto
 ```
 git remote
 remote -v
 ```
-Desconectarme de repositorio demoto
+Desconectarme de repositorio remoto
 ```
 git remote rm origin
 ```
