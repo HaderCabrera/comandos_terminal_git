@@ -175,6 +175,38 @@ git revert c227a63
 ```
 **Es necesario hacer restore para actualizar**
 
+## Resolver conflictos
+```
+```
+Crear rama y moverme a esa rama
+```
+git checkout -b rama-1
+```
+Historico de commits con grafica
+```
+git log --all --graph
+```
+### Primer caso: Intentar hacer cambios sobre un archivo modificado desde otra rama
+- Decidir que mantener manualmente desde visual
+
+Cancelar merge mientras estoy en conflicto
+```
+git merge --abort
+```
+
+user@root:~/repositorio-pruebaa$ vi ap.js
+### VI
+Agregar contenido desde VI
+```
+:set nu!
+```
+Guardar contenido en VI
+```
+:wq!
+```
+
+
+
 
 
 
